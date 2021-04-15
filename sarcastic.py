@@ -16,7 +16,7 @@ num_epochs = 15
 
 def train(): 
     # News Headlines Dataset For Sarcasm Detection
-    with open("data/sarcasm.json", 'r') as f:
+    with open("data/sarcasm/sarcasm.json", 'r') as f:
         datastore = json.load(f)
 
     sentences = []
