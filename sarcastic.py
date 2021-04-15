@@ -56,7 +56,7 @@ def train():
     model.compile(loss='binary_crossentropy',optimizer='adam',metrics=['accuracy'])
     #model.summary()
 
-    history = model.fit(training_padded, training_labels, epochs=num_epochs, validation_data=(testing_padded, testing_labels), verbose=2)
+    history = model.fit(training_padded, training_labels, epochs=num_epochs, validation_data=(testing_padded, testing_labels) , verbose=False)
     
     return tokenizer, model
 
