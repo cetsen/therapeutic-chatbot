@@ -5,6 +5,10 @@ from tensorflow.keras.preprocessing.sequence import pad_sequences
 import numpy as np
 import matplotlib.pyplot as plt
 
+# This code is based on Ibrahim Sobh's code
+# https://www.linkedin.com/pulse/you-being-sarcastic-deep-learning-answers-code-ibrahim-sobh-phd/?articleId=6662861432498987008
+# which is based on a Coding TensorFlow tutorial: https://www.youtube.com/watch?v=Y_hzMnRXjhI
+
 vocab_size = 10000
 embedding_dim = 16
 max_length = 100
