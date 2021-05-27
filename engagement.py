@@ -57,7 +57,6 @@ def merge_consecutive_speaker_responses(conversation, speaker, listener):
     num_listener_responses = len(listener_responses)
                  
     return conversation, num_speaker_responses, num_listener_responses
-        
     
 
 def is_interleaved_conversation(speaker, listener, conversation):
@@ -94,6 +93,6 @@ def engagement_preprocessing(speaker, listener, conversation):
     # Convert boolean to int
     interleaved_int = 1 if interleaved == True else -1
     
-    return num_turns, interleaved, token_length_score, num_turn_diff, conversation
+    return num_turns, interleaved, token_length_score, num_turn_diff, num_speaker_responses, num_listener_responses, conversation
 
 

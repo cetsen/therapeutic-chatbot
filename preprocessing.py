@@ -1,6 +1,7 @@
 import pandas as pd
 import csv
 
+
 if __name__ == "__main__":
     col_names = ["conversation id","subreddit","post title","author","dialog turn","text","compound","sentiment","emotion prediction"]
     df = pd.read_csv("data/RED/anxietyhelp_dyadic_convs_clean_emotion.csv", names=col_names, engine='python', dtype={'conversation id': 'unicode'})

@@ -78,7 +78,6 @@ def contains_profanity(conversation, speaker):
 
 
 def contains_gratitude(conversation, speaker):
- 
     # Take the speaker responses except first one
     speaker_responses = conversation[conversation['author'] == speaker]
     speaker_responses = speaker_responses[speaker_responses['dialog_turn'] != 1]
@@ -179,10 +178,17 @@ def sentence_level_sentiment(conversation):
 def strongest_sentiment(conversation):
     '''Creates a column with the sentence compound with strongest magnitude within a dialogue turn'''
     conversation['strongest_compound'] = conversation['sentence_compounds']
-    conversation['strongest_compound'] = conversation['strongest_compound'].apply(lambda x: np.min(x) if np.max(abs(x)) == abs(np.min(x)) else np.max(x))
+    conversation['strongest_compound'] = conversation['strongest_compound'].apply(lambda x: max_abs(x))
     
     return conversation
 
+
+def max_abs(x):
+    if len(x) != 0:
+        return max(x, key=abs)
+    else:
+        return 0
+    
 
 def satisfaction_preprocessing(conversation, speaker, tokenizer, model):
     conversation = sentence_level_sentiment(conversation)
