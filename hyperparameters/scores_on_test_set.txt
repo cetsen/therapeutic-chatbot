@@ -1,0 +1,5 @@
+--- SATISFACTION SCORES ---
+Precision: 0.8387 Recall: 0.7222 f1-score: 0.7761 Accuracy: 0.7 
+
+--- ENGAGEMENT SCORES ---
+Precision: 0.9 Recall: 1.0 f1-score: 0.9474 Accuracy: 0.9
