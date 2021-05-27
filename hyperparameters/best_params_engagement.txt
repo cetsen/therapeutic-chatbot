@@ -1,1 +1,1 @@
-{'eng_threshold': 4, 'num_turns_weight': 1.5, 'interleaved_weight': 1.5, 'token_length_weight': 0.25, 'diff_weight': -1, 'P_e': 0.9111111111111111, 'R_e': 0.8913043478260869, 'f1_e': 0.9010989010989011, 'acc_e': 0.82}
+{'eng_threshold': 2.75, 'num_turns_weight': 0.75, 'interleaved_weight': 0.75, 'token_length_weight': 0.025, 'diff_weight': -0.25, 'P_e': 0.92, 'R_e': 1.0, 'f1_e': 0.9583333333333334, 'acc_e': 0.92}
