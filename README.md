@@ -1,4 +1,4 @@
-# What Makes a Conversation Satisfying and Engaging? --- An Analysis on Reddit Distress Dialogues
+# What Makes a Conversation Satisfying and Engaging? – An Analysis on Reddit Distress Dialogues
 
 ## Abstract
 Recently, AI-driven chatbots have gained interest to help people deal with emotional distress and help them regulate emotion. However, since conversational data between patients who are in emotional distress and therapists who are actively offering emotional support is hardly available publicly due to privacy and ethical reasons, the most feasible option is to train chatbots on data from online forums such as Reddit. One challenge is ensuring that the data collected from these platforms contain responses that lead to high engagement and satisfaction and avoid those that lead to dissatisfaction and disengagement.  
