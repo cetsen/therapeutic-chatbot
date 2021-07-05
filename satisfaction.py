@@ -112,12 +112,11 @@ def contains_sarcasm(conversation, speaker, tokenizer, model):
     
     # Take the speaker responses except first one\
     speaker_sentences = conversation[conversation['author'] == speaker]
-    speaker_sentences = speaker_sentences[speaker_sentences['dialog_turn'] != 1]
+    speaker_sentences = speaker_sentences.iloc[1:,:]
     speaker_sentences = speaker_sentences['sentences']
     sarcastic_probas = sarcastic.proba(speaker_sentences, tokenizer, model)
     #print(sarcastic_probas)
     
-    # Can be optimized 
     if (sarcastic_probas > 0.6).any():
         return True
     
@@ -199,7 +198,7 @@ def satisfaction_preprocessing(conversation, speaker, tokenizer, model):
     sentiment_change = speaker_responses['strongest_compound'].iloc[-1] - speaker_responses['strongest_compound'].iloc[0]
     
     # Take the slope of the compounds of speaker responses
-    f = np.polyfit(speaker_responses['dialog_turn'], speaker_responses['compound'], deg=1)
+    f = np.polyfit(speaker_responses['dialog_turn'], speaker_responses['strongest_compound'], deg=1)
     slope = f[0]
 
     grateful_bonus = 1 if (is_tagged_grateful_positive(speaker_responses) == True or contains_gratitude(speaker_responses, speaker) == True) else 0
