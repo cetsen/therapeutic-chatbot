@@ -8,6 +8,6 @@ We have developed a novel scoring function that can measure the level of satisfa
 ## Dataset
 The dataset can be found in the following folders in [Google Drive](https://drive.google.com/drive/folders/1Fg5RvwlGQ5s1k3YHmzkkg9-f3d77hMD0?usp=sharing):
 * *RED/100_annotated*: 100 dialogues picked randomly from each subreddit of the RED dataset, annotated with their ground truth labels of engagement and satisfaction
-* *RED/clean/unlabeled*: Cleaned dyadic conversations from the RED dataset with their sentiment and emotion predictions
-* *RED/clean/labeled*: Cleaned dyadic conversations from the RED dataset with their sentiment, emotion, engagement, and satisfaction predictions
+* *RED/clean/unlabeled*: Clean dyadic conversations from the RED dataset with their sentiment and emotion predictions
+* *RED/clean/labeled*: Clean dyadic conversations from the RED dataset with their sentiment, emotion, engagement, and satisfaction predictions
 * *sarcasm*: News headlines dataset for sarcasm detection
