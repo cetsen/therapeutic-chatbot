@@ -11,3 +11,4 @@ The dataset can be found in the following folders in [Google Drive](https://driv
 * *RED/clean/unlabeled*: Clean dyadic conversations from the RED dataset with their sentiment and emotion predictions
 * *RED/clean/labeled*: Clean dyadic conversations from the RED dataset with their sentiment, emotion, engagement, and satisfaction predictions
 * *sarcasm*: News headlines dataset for sarcasm detection
+* *intent_analyis*: Manual analysis of listener response intents
